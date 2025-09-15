@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
-import { User, BookOpen, FileText, TrendingUp, MessageSquare, BarChart3 } from 'lucide-react';
+import { User, BookOpen, FileText, TrendingUp, MessageSquare, BarChart3, Calendar } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Sidebar from '../../components/Sidebar';
 
@@ -27,6 +27,7 @@ const StudentDashboard = () => {
     { icon: BookOpen, label: 'Courses', path: '/courses' },
     { icon: FileText, label: 'Assignments', path: '/assignments' },
     { icon: TrendingUp, label: 'Progress', path: '/progress' },
+    { icon: Calendar, label: 'Attendance', path: '/attendance' },
     { icon: MessageSquare, label: 'Teacher Contacts', path: '/messages' }
   ];
 

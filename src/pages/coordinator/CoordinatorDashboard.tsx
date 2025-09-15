@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Outlet } from 'react-router-dom';
-import { Users, BookOpen, FileText, BarChart3, Settings } from 'lucide-react';
+import { Users, BookOpen, FileText, BarChart3, Settings, Calendar } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Sidebar from '../../components/Sidebar';
 
@@ -12,6 +12,7 @@ const CoordinatorDashboard = () => {
     { icon: Users, label: 'Users', path: '/users' },
     { icon: BookOpen, label: 'Courses', path: '/courses' },
     { icon: FileText, label: 'Assignments', path: '/assignments' },
+    { icon: Calendar, label: 'Attendance', path: '/attendance' },
     { icon: FileText, label: 'Reports', path: '/reports' },
     { icon: Settings, label: 'Settings', path: '/settings' }
   ];

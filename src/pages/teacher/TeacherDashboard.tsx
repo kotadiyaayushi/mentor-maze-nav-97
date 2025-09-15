@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
-import { User, BookOpen, FileText, Users, BarChart3 } from 'lucide-react';
+import { User, BookOpen, FileText, Users, BarChart3, Calendar } from 'lucide-react';
 import Navbar from '../../components/Navbar';
 import Sidebar from '../../components/Sidebar';
 
@@ -26,6 +26,7 @@ const TeacherDashboard = () => {
     { icon: User, label: 'Profile', path: '/profile' },
     { icon: BookOpen, label: 'Courses', path: '/courses' },
     { icon: FileText, label: 'Assignments', path: '/assignments' },
+    { icon: Calendar, label: 'Attendance', path: '/attendance' },
     { icon: Users, label: 'Students', path: '/students' }
   ];
 

@@ -20,17 +20,20 @@ import StudentCourses from "./pages/student/StudentCourses";
 import StudentAssignments from "./pages/student/StudentAssignments";
 import StudentProgress from "./pages/student/StudentProgress";
 import StudentMessages from "./pages/student/StudentMessages";
+import StudentAttendance from "./pages/student/StudentAttendance";
 
 // Teacher Dashboard
 import TeacherDashboard from "./pages/teacher/TeacherDashboard";
 import TeacherOverview from "./pages/teacher/TeacherOverview";
 import TeacherCourses from "./pages/teacher/TeacherCourses";
 import TeacherStudents from "./pages/teacher/TeacherStudents";
+import TeacherAttendance from "./pages/teacher/TeacherAttendance";
 
 // Coordinator Dashboard
 import CoordinatorDashboard from "./pages/coordinator/CoordinatorDashboard";
 import CoordinatorOverview from "./pages/coordinator/CoordinatorOverview";
 import CoordinatorReports from "./pages/coordinator/CoordinatorReports";
+import CoordinatorAttendance from "./pages/coordinator/CoordinatorAttendance";
 
 const queryClient = new QueryClient();
 
@@ -61,6 +64,7 @@ const App = () => (
             <Route path="courses" element={<StudentCourses />} />
             <Route path="assignments" element={<StudentAssignments />} />
             <Route path="progress" element={<StudentProgress />} />
+            <Route path="attendance" element={<StudentAttendance />} />
             <Route path="messages" element={<StudentMessages />} />
           </Route>
 
@@ -71,6 +75,7 @@ const App = () => (
             <Route path="profile" element={<StudentProfile />} />
             <Route path="courses" element={<TeacherCourses />} />
             <Route path="assignments" element={<StudentAssignments />} />
+            <Route path="attendance" element={<TeacherAttendance />} />
             <Route path="students" element={<TeacherStudents />} />
           </Route>
 
@@ -81,6 +86,7 @@ const App = () => (
             <Route path="users" element={<TeacherStudents />} />
             <Route path="courses" element={<TeacherCourses />} />
             <Route path="assignments" element={<StudentAssignments />} />
+            <Route path="attendance" element={<CoordinatorAttendance />} />
             <Route path="reports" element={<CoordinatorReports />} />
             <Route path="settings" element={<StudentProfile />} />
           </Route>
